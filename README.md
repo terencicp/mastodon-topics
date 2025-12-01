@@ -40,9 +40,9 @@ The system consists of five main components:
 - MongoDB
 - Ollama
 
-### Additional requirements
-- Define the environment variable MASTODON_HASHING_KEY for data anonymization
-- HuggingFace account (to use Gemma embeddings) and the environment variable HUGGINGFACE_TOKEN
+### Environment variables
+- MASTODON_HASHING_KEY for data anonymization
+- HUGGINGFACE_TOKEN from your HuggingFace account for Gemma embeddings
 
 ## Acknowledgments
 
