@@ -8,7 +8,7 @@ from utils import setup_logging_format
 
 logger = setup_logging_format()
 
-SCRIPTS = ['preprocess.py', 'model.py', 'summarize.py']
+SCRIPTS = ['preprocess.py', 'model.py', 'summarize.py', 'push.py']
 
 def run_script(script_name):
 
