@@ -44,7 +44,7 @@ def escape_dollars(text):
     return text.replace('$', '\\$')
 
 st.title('What are people talking about on Mastodon today?')
-st.markdown('##### A daily summary of the most popular themes from english-language posts on mastodon.social')
+st.markdown('##### A daily summary of the most popular themes in english-language posts on mastodon.social')
 
 # Get available options
 dates = get_available_dates()
