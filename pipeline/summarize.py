@@ -18,7 +18,7 @@ import tiktoken
 from utils import setup_logging_format, get_date_twodaysago, remove_similar_documents
 
 # Topic selection
-PROPORTION_OF_TOPIC_DOCS_COVERED = 0.4
+PROPORTION_OF_TOPIC_DOCS_COVERED = 0.33
 
 # Topic document selection
 MAX_POPULAR_DOC_SIMILARITY = 0.45
