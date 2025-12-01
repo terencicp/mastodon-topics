@@ -4,6 +4,8 @@ This project implements an end-to-end pipeline for discovering and summarizing t
 
 You can view the results at [mastodon-topics.streamlit.app](https://mastodon-topics.streamlit.app/)
 
+You can view the development notebooks and experiments at [github.com/terencicp/social-network-topic-modeling](https://github.com/terencicp/social-network-topic-modeling)
+
 ## Architecture
 
 The pipeline consists of three main components:
