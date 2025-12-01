@@ -33,12 +33,14 @@ The system consists of five main components:
 
 ## Requirements
 
-### Dependencies
+### System dependencies
 - Python 3.11
-- Pipeline python dependencies listed in pipeline/requirements.txt
-- Streamlit python dependencies listed in app/requirements.txt
 - MongoDB
 - Ollama
+
+### Python dependencies
+- Pipeline: pipeline/requirements.txt
+- Streamlit: app/requirements.txt
 
 ### Environment variables
 - MASTODON_HASHING_KEY for data anonymization
