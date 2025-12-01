@@ -49,8 +49,8 @@ The system consists of five main components:
 This project builds upon the work of several amazing open-source projects and research teams:
 
 - **[Mastodon](https://joinmastodon.org/)**: decentralized social network
-- **[Gemma Embeddings](https://ai.google.dev/gemma)**: embedding models from Google DeepMind
-- **[BERTopic](https://github.com/MaartenGr/BERTopic)**: topic modeling framework by Maarten Grootendorst
+- **[Gemma embeddings](https://ai.google.dev/gemma)**: embedding models from Google DeepMind
+- **[BERTopic](https://maartengr.github.io/BERTopic/)**: topic modeling framework by Maarten Grootendorst
 - **[Qwen3](https://qwen.ai/)**: LLM from Alibaba Cloud
 
 Please make a donation to Mastodon if you use its API to offset the server costs.
