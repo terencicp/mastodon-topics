@@ -4,13 +4,13 @@ from datetime import datetime
 
 # Get dates from folder names
 def get_available_dates():
-    data_path = Path('../data')
+    data_path = Path('data')
     dates = [d.name for d in data_path.iterdir() if d.is_dir()]
     return sorted(dates, reverse=True)
 
 # Get files for a date
 def get_files_for_date(date):
-    summaries_path = Path(f'../data/{date}/summaries')
+    summaries_path = Path(f'data/{date}/summaries')
     return list(summaries_path.glob('*.json'))
 
 # Extract unique timezones from files
@@ -37,4 +37,4 @@ def format_date(date_str):
 def build_file_path(date, timezone):
     tz_parts = timezone.split('/')
     filename = f'{tz_parts[0]}-{tz_parts[1]}.json'
-    return Path(f'../data/{date}/summaries/{filename}')
+    return Path(f'data/{date}/summaries/{filename}')
