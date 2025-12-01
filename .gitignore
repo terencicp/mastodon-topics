@@ -1,0 +1,17 @@
+# Files
+.DS_Store
+
+# File types
+*.csv
+*.npy
+*.bin
+*.pyc
+*.log
+
+# Folders
+__pycache__/
+.venv/
+logs/
+data/*/documents/
+data/*/embeddings/
+data/*/topics/
