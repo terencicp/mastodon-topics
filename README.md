@@ -8,7 +8,7 @@ This project implements an end-to-end pipeline for discovering and summarizing t
 
 ## Architecture
 
-[Insert diagram here]
+![Pipeline diagram](./pipeline-diagram.svg)
 
 The system consists of five main components:
 
@@ -57,8 +57,8 @@ Please make a donation to Mastodon if you use its API to offset the server costs
 
 ## Contact
 
-This project was developed as part of my Applied Data Science Degree thesis.
-
 LinkedIn: [Terenci Claramunt](https://www.linkedin.com/in/terenci/)
+
+This project was developed as part of my Applied Data Science Degree thesis.
 
 Feel free to reach out for questions about the methodology or implementation.
