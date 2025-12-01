@@ -11,6 +11,8 @@ The pipeline consists of three main components:
 
 ![Pipeline diagram](./pipeline-diagram.svg)
 
+The main files are:
+
 **collect.py** - Data collection
    - Fetches public posts from mastodon.social API
    - Anonymizes data and stores it in MongoDB
