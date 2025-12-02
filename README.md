@@ -2,9 +2,9 @@
 
 This project implements an end-to-end pipeline for discovering and summarizing trending topics on the Mastodon social network. It combines BERTopic for topic modeling with large language models to generate interpretable summaries, providing daily insights into what the Mastodon community is discussing.
 
-You can view the results at [mastodon-topics.streamlit.app](https://mastodon-topics.streamlit.app/)
+View the results at [mastodon-topics.streamlit.app](https://mastodon-topics.streamlit.app/)
 
-You can view the development notebooks at [github.com/terencicp/social-network-topic-modeling](https://github.com/terencicp/social-network-topic-modeling)
+View the development notebooks at [github.com/terencicp/social-network-topic-modeling](https://github.com/terencicp/social-network-topic-modeling)
 
 ## Architecture
 
