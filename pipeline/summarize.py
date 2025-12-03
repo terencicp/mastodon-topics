@@ -56,8 +56,8 @@ def generate_llm_summary(docs):
 This subset of user posts from a social network have been clustered as a topic.
 Your task is to provide a thoughtful in-depth analysis of its content to help
 readers understand the general themes of the messages.
-Your summary for this topic and others will be shown in a page titled:
-'What are people talking about today?'
+Your summary for this topic and others will be published in a page 
+of the most popular topics of the day. Today's date: {yesterday_ymd}
 
 Topic user posts:
 
