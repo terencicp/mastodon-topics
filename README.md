@@ -1,6 +1,6 @@
 # Mastodon topic modeling
 
-This project implements an end-to-end pipeline for discovering and summarizing trending topics on the Mastodon social network. It combines BERTopic for topic modeling with large language models to generate interpretable summaries, providing daily insights into what the Mastodon community is discussing.
+This project implements an end-to-end pipeline for discovering and summarizing popular topics on the Mastodon social network. It combines BERTopic for topic modeling with large language models to generate interpretable summaries, providing daily insights into what the Mastodon community is discussing.
 
 View the results at [mastodon-topics.streamlit.app](https://mastodon-topics.streamlit.app/)
 
