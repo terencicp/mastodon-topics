@@ -54,7 +54,7 @@ def fetch_timeline(min_id):
         response.raise_for_status()
         return response.json()
     except Exception as error:
-        logger.error(f'Error fetching data: {error}')
+        logger.error(f'Error fetching data: {error}.')
         return []
 
 # Get the highest id and its created_at timestamp
@@ -138,7 +138,7 @@ def store_statuses(db, statuses):
                 upsert=True
             )
         except Exception as e:
-            logger.error(f'Error saving to MongoDB: {e}')
+            logger.error(f'Error saving to MongoDB: {e}.')
             continue
 
 # Fetch statuses from the Mastodon API continuously
@@ -146,6 +146,10 @@ while True:
 
     try:
         statuses = fetch_timeline(min_id)
+        if not statuses:
+            logger.warning('No statuses found.')
+            time.sleep(2)
+            continue
         min_id, last_status_datetime = get_latest_min_id(min_id, statuses)
         age = datetime.now(timezone.utc) - last_status_datetime
         if age >= timedelta(days=1):
@@ -154,7 +158,7 @@ while True:
             statuses = hash_ids(statuses)
             statuses = select_fields(statuses)
             store_statuses(db, statuses)
-            logger.info(f'Saved {len(statuses)} statuses')
+            logger.info(f'Saved {len(statuses)} statuses.')
             time.sleep(2)
         else:
             logger.info(f'Last status is <1 day old, waiting.')
