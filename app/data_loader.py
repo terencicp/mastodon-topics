@@ -2,11 +2,11 @@ import json
 from pathlib import Path
 from datetime import datetime
 
-# Get last 7 days from folder names
+# Get last 30 days from folder names
 def get_available_dates():
     data_path = Path('data')
     dates = [d.name for d in data_path.iterdir() if d.is_dir()]
-    return sorted(dates, reverse=True)[:7]
+    return sorted(dates, reverse=True)[:30]
 
 # Get files for a date
 def get_files_for_date(date):
