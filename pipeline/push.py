@@ -16,8 +16,3 @@ try:
     logger.info(f'Pushed data to GitHub.')
 except subprocess.CalledProcessError as e:
     logger.error(f'Git command failed: {e}.')
-
-try:
-    requests.get('https://mastodon-topics.streamlit.app/', timeout=10)
-except:
-    pass
